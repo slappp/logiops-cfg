@@ -54,14 +54,42 @@ This document describes the keybindings and configuration settings for the Logit
 - DPI adjustments are available via the top button.
 
 ## Installation & Usage
-1. Install `logiops` if not already installed:
+### Debian/Ubuntu
+1. Install `logiops`:
    ```
    sudo apt install logiops
    ```
+
+### Arch Linux
+1. Install `logiops` from AUR:
+   ```
+   yay -S logiops
+   ```
+   or manually using:
+   ```
+   git clone https://aur.archlinux.org/logiops.git
+   cd logiops
+   makepkg -si
+   ```
+
+### Fedora
+1. Install `logiops`:
+   ```
+   sudo dnf install logiops
+   ```
+
+### OpenSUSE
+1. Install `logiops`:
+   ```
+   sudo zypper install logiops
+   ```
+
+### Configuration
 2. Edit the configuration file:
    ```
    sudo nano /etc/logid.cfg
    ```
+
 3. Restart the Logiops service:
    ```
    sudo systemctl restart logid
